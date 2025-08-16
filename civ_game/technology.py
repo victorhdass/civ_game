@@ -1,0 +1,62 @@
+TECHNOLOGIES = {
+    "agriculture": {
+        "name": "Agriculture",
+        "cost": 50,
+        "unlocks": ["pottery"],
+        "description": "Allows for the construction of farms, increasing food production.",
+    },
+    "mining": {
+        "name": "Mining",
+        "cost": 50,
+        "unlocks": ["masonry"],
+        "description": "Allows for the construction of mines, increasing resource production.",
+    },
+    "writing": {
+        "name": "Writing",
+        "cost": 100,
+        "unlocks": ["alphabet"],
+        "description": "Unlocks libraries and increases research speed.",
+    },
+    "pottery": {
+        "name": "Pottery",
+        "cost": 100,
+        "unlocks": [],
+        "description": "Unlocks granaries, which help store food.",
+        "requires": ["agriculture"],
+    },
+    "masonry": {
+        "name": "Masonry",
+        "cost": 100,
+        "unlocks": [],
+        "description": "Unlocks walls for city defense.",
+        "requires": ["mining"],
+    },
+    "alphabet": {
+        "name": "Alphabet",
+        "cost": 150,
+        "unlocks": [],
+        "description": "Further increases research speed.",
+        "requires": ["writing"],
+    },
+    "cartography": {
+        "name": "Cartography",
+        "cost": 200,
+        "unlocks": [],
+        "description": "Allows for advanced sea exploration and the potential discovery of new lands.",
+        "requires": ["alphabet"],
+    },
+    "economics": {
+        "name": "Economics",
+        "cost": 300,
+        "unlocks": ["computers"],
+        "description": "Unlocks advanced economic policies and buildings like the Stock Exchange.",
+        "requires": ["cartography"],
+    },
+    "computers": {
+        "name": "Computers",
+        "cost": 500,
+        "unlocks": [],
+        "description": "The pinnacle of modern technology, enabling complex financial modeling.",
+        "requires": ["economics"],
+    },
+}
